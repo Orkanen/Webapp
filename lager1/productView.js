@@ -1,4 +1,5 @@
 "use strict";
+/* global menu */
 
 var findProduct = (function () {
     function showProduct(productsId) {
@@ -42,7 +43,7 @@ var findProduct = (function () {
                     }
                 }
             });
-        
+
         window.mainContainer.appendChild(header);
         window.mainContainer.appendChild(prodElement);
         window.rootElement.appendChild(window.mainContainer);

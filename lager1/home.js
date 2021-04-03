@@ -1,4 +1,5 @@
 "use strict";
+/* global menu */
 
 var home = (function () {
     var showHome = function () {
@@ -16,7 +17,7 @@ var home = (function () {
 
         information.className = "greeting";
 
-        let textGreeting = "Welcome to Stock 365"
+        let textGreeting = "Welcome to Stock 365";
         let textInfo = "We have wide assortment of "
         +" bolts, nails and screws.";
 
@@ -30,9 +31,8 @@ var home = (function () {
 
         window.mainContainer.appendChild(title);
         window.mainContainer.appendChild(greeting);
-        window.mainContainer.appendChild(information);        
+        window.mainContainer.appendChild(information);
         //window.mainContainer.appendChild(image);
-
         window.rootElement.appendChild(window.mainContainer);
 
         menu.showMenu("home");

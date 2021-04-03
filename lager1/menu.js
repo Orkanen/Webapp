@@ -1,4 +1,5 @@
 "use strict";
+/* global home products */
 
 var menu = (function () {
     var showMenu = function (selected) {

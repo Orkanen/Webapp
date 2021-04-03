@@ -33,6 +33,7 @@ p {
 
 .bottom-nav a.active {
     background-color: beige;
+    border-top: solid 2px black;
 }
 
 .title {
@@ -61,7 +62,7 @@ p {
     margin: 1%;
     height: 4em;
     text-align: center;
-    border-style: inset;
-    border-radius: 5px;
+    border-style: outset;
+    border-radius: 0.25em;
     border-color: beige;
 }

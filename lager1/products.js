@@ -1,4 +1,5 @@
 "use strict";
+/* global menu findProduct */
 
 var products = (function () {
     function showProducts() {

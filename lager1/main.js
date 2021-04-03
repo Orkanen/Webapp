@@ -1,4 +1,5 @@
 "use strict";
+/* global home */
 
 (function () {
     window.rootElement = document.getElementById("root");
