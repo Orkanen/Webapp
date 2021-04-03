@@ -10,11 +10,12 @@ var products = (function () {
 
         let container = document.createElement("main");
 
-        container.className = "container";
+        container.className = "pContainer";
 
         let header = document.createElement("h1");
 
         header.textContent = "Products";
+        header.className = "pTitle";
 
         fetch(`${baseUrl}/products?api_key=${apiKey}`)
             .then(response => response.json())
@@ -26,6 +27,7 @@ var products = (function () {
                     let prodElement = document.createElement("p");
 
                     prodElement.textContent = product.name;
+                    prodElement.className = "pItem";
 
                     prodElement.addEventListener("click", function handleClick(event) {
                         console.log(event);
@@ -33,13 +35,14 @@ var products = (function () {
                         findProduct.showProduct(product.id);
                     });
 
-                    window.mainContainer.appendChild(prodElement);
+                    container.appendChild(prodElement);
                 });
             });
 
 
+        window.mainContainer.appendChild(container);
+        container.appendChild(header);
 
-        window.mainContainer.appendChild(header);
         window.rootElement.appendChild(window.mainContainer);
         menu.showMenu("products");
     }

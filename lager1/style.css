@@ -42,3 +42,26 @@ p {
 .greeting {
     text-align: center;
 }
+
+.pContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pTitle {
+    order: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.pItem {
+    order: 2;
+    width: 29%;
+    background-color: beige;
+    margin: 1%;
+    height: 4em;
+    text-align: center;
+    border-style: inset;
+    border-radius: 5px;
+    border-color: beige;
+}
